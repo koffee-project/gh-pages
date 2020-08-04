@@ -7,31 +7,39 @@
     <title>Koffee KDoc</title>
     <meta name="description" content="Koffee KDoc">
     <meta name="author" content="Jan Müller">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <style>
-        html, body, iframe, div {
-            width: 100%;
-            height: 100%;
+    	.top-buffer {
+        	margin-top: 30px;
         }
-
-        .column {
-            float: left;
-            width: 50%;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
+    
+        .logo {
+        	width: 100px;
+            height: 100px;
         }
     </style>
 </head>
 
 <body>
-    <div class="row">
-        <div class="column"><iframe src="https://koffee.yeger.eu/app/app/" frameborder="0" scrolling="yes" align="left"> </iframe></div>
-        <div class="column"><iframe src="https://koffee.yeger.eu/backend/koffee-backend" frameborder="0" scrolling="yes" align="right"></iframe></div>
+    <div class="container-fluid">
+        <div class="row align-items-center top-buffer">
+            <div class="col-auto mr-auto">
+                <h1>Koffee KDoc</h1>
+            </div>
+            <div class="col-auto">
+                <img src="https://raw.githubusercontent.com/koffee-project/design/master/logo_transparent.png" class="logo" alt="Koffee Logo">
+            </div>
+        </div>
+        <div class="row align-items-end top-buffer">
+            <div class="col">
+                <a class="btn btn-primary btn-lg btn-block" href="https://koffee.yeger.eu/app/app/" align="left">Android App</a>
+            </div>
+            <div class="col">
+                <a class="btn btn-primary btn-lg btn-block" href="https://koffee.yeger.eu/backend/koffee-backend" align="right">Backend</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
