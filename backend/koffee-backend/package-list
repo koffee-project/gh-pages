@@ -1,0 +1,13 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+eu.yeger.koffee
+eu.yeger.koffee.authentication
+eu.yeger.koffee.di
+eu.yeger.koffee.model.domain
+eu.yeger.koffee.model.dto
+eu.yeger.koffee.repository
+eu.yeger.koffee.routing
+eu.yeger.koffee.service
+eu.yeger.koffee.utility
+
